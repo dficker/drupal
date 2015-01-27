@@ -1,0 +1,12 @@
+name = iFrame removing filter
+description = Remove iframes from displaying according to hostnames.
+package = Filters
+core = 7.x
+version = "7.x-0.1-dev"
+
+; Information added by drupal.org packaging script on 2013-03-15
+version = "7.x-1.0"
+core = "7.x"
+project = "iframeremove"
+datestamp = "1363321817"
+

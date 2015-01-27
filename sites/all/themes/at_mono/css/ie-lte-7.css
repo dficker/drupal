@@ -1,0 +1,14 @@
+/* AT */
+#footer .four-4x25 .block-inner {
+  padding: 0 10px;
+}
+.form-submit {
+  position: relative;
+  top: -4px;
+}
+#header-wrapper,
+#secondary-content-wrapper,
+footer-wrapper,
+#footer {
+  zoom: 1;
+}
