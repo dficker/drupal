@@ -1454,25 +1454,94 @@ i.footer-logo:before {
 
 /* home styles */
 #block-views-calendar-block-2 {
-  width: 45%;
+  width: 40%;
   float: left;
 }
 #block-views-calendar-block-2 .block-inner,
 #block-views-calendar-block-2 .block-title-wrapper {
   margin: 0;
 }
-#block-views-calendar-block-2 .block-title {
+#block-views-calendar-block-2 .block-title,
+#block-views-page-elements-block h2 {
   padding: 0;
   font-size: 26px;
   font-weight: 400;
   text-transform: none;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #ddd;
   border-radius: 0;
 }
 #block-views-calendar-block-2 h4 {
   font-size: 16px;
+  margin: 0;
 }
+#block-views-calendar-block-2 h4 a {
+  font-weight: 500;
+}
+#block-views-calendar-block-2 .event-info .date-display-single {
+  font-weight: 500;
+  color: #555;
+}
+#block-views-calendar-block-2 .event {
+  display: table;
+  margin-bottom: 15px;
+}
+#block-views-calendar-block-2 a:hover {
+  text-decoration: none;
+}
+#block-views-calendar-block-2 .date,
+#block-views-calendar-block-2 .event-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+#block-views-calendar-block-2 .date {
+  padding-right: 10px;
+  min-width: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#block-views-calendar-block-2 .month,
+#block-views-calendar-block-2 .day {
+  display: block;
+  line-height: 1;
+  font-weight: 700;
+  color: #888;
+}
+#block-views-calendar-block-2 .month {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#block-views-calendar-block-2 .day {
+  font-size: 26px;
+}
+#block-views-calendar-block-2 .view-footer {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 40px;
+}
+#block-views-calendar-block-2 .view-all {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px;
+}
+#block-views-calendar-block-2 .view-all:hover {
+  text-decoration: none;
+}
+
+#block-views-page-elements-block {
+  float: left;
+  width: 50%;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+#block-views-page-elements-block p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #454343;
+}
+
 .front .region-content article {
   display: none;
 }
@@ -1484,6 +1553,9 @@ i.footer-logo:before {
   position: relative;
   z-index: 200;
   padding-top: 40px;
+}
+.front #tasks {
+  float: right;
 }
 
 /* Search results */
