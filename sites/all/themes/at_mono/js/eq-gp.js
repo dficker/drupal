@@ -6,4 +6,8 @@
       $('#quad-panel .block-content').equalHeight();
     }
   };
+
+  $(document).ready(function() {
+    $('#menu-bar .menu-mlid-230 a').empty().append('<i class="fa fa-home"></i>');
+  });
 })(jQuery);
