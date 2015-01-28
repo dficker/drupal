@@ -866,30 +866,49 @@ a.active:focus {
   width: 100%;
   float: none;
 }
-#menu-bar ul li {
-  display: table-cell;
-  text-align: center;
-  float: none;
+#menu-bar li {
+  float: left;
 }
-#menu-bar ul li a {
-  display: block;
-  font-size: 14px;
-  padding: 12px 0;
-  background-color: transparent;
+#menu-bar a {
+  transition: .3s all ease;
+  color: #3b3a3a;
+  font-size: 11px;
 }
-#menu-bar ul li a:hover {
-  background-color: #EAE4E4;
+#menu-bar a:hover {
   text-decoration: none;
-  color: #A21D15;
+  color: #b81d00;
 }
-#menu-bar ul ul {
+#menu-bar .menu-block-wrapper > ul > li {
+
+}
+#menu-bar .menu-block-wrapper > ul > li:hover > a {
+  background-color: #EAE4E4;
+  color: #b81d00;
+}
+#menu-bar .menu-block-wrapper > ul > li > a {
+  padding: 0 10px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+}
+#menu-bar .menu-block-wrapper > ul > li > ul {
   display: none;
   position: absolute;
   left: 0;
   background-color: #EAE4E4;
+  padding-top: 20px;
   box-shadow: 0 2px 4px #666;
 }
-#menu-bar li:hover ul {
+#menu-bar .menu-block-wrapper > ul > li > ul > li {
+  width: 16.6667%;
+  margin-bottom: 20px;
+}
+#menu-bar .menu-block-wrapper > ul > li > ul > li > a {
+  font-size: 13px;
+  font-weight: 700;
+}
+#menu-bar .menu-block-wrapper > ul > li:hover > ul {
   display: block;
 }
 
