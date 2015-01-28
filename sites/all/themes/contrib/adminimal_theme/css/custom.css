@@ -1,0 +1,152 @@
+/* Custom fieldset stuff */
+
+div.vertical-tabs {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 5px #ddd;
+    border-radius: 5px 5px 0 0;
+}
+
+div.vertical-tabs ul li.vertical-tab-button.first a {
+	border-radius: 5px 0 0 0;
+}
+
+
+#block-system-main a {
+	color: #00B2EB;	
+}
+#module-filter-tabs li a,
+#block-system-main div.vertical-tabs ul li.vertical-tab-button a {
+    color: #444;
+}
+div.vertical-tabs ul li.selected a, 
+div.vertical-tabs ul li.selected a:hover, 
+div.vertical-tabs ul li.selected a:focus, 
+div.vertical-tabs ul li.selected a:active {
+    border-left: 5px solid #00B2EB;	
+}
+div.vertical-tabs .vertical-tabs-panes {
+	margin: 0 0 0 256px;
+    padding: 17px 16px 15px 0;
+}
+
+.vertical-tabs-panes fieldset.field-group-tab,
+.vertical-tabs-panes fieldset.vertical-tabs-pane {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.vertical-tabs-panes fieldset.field-group-tab legend,
+.vertical-tabs-panes fieldset.vertical-tabs-pane legend {
+	display: none !important;
+}
+.vertical-tabs-panes fieldset fieldset.form-wrapper legend {
+	display: block !important;
+}
+.vertical-tabs-pane .fieldset-wrapper .vertical-tabs-panes > fieldset > legend {
+    display: none !important;
+}
+
+.vertical-tabs-panes fieldset .fieldset-wrapper .form-item,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-image,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-file,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-entityreference {
+	background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-top: 1px solid #00B2EB;
+    box-shadow: 0 1px 5px #eee;
+    padding: 0 10px 10px;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .form-item.form-type-checkbox,
+.vertical-tabs-panes fieldset .fieldset-wrapper .form-item.form-type-radio,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-image .form-item,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-file .form-item {
+	background-color: transparent;
+    border: none;
+    border-top: none;
+    box-shadow: none;
+    padding: 0 10px 10px;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-image .form-item,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-file .form-item,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-entityreference .form-wrapper .fieldset-wrapper .form-wrapper {
+	margin-bottom: 0;
+	padding: 0;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-entityreference .form-wrapper .fieldset-wrapper .form-wrapper .form-type-select {
+	border: medium none;
+    box-shadow: none;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-entityreference .form-wrapper .fieldset-wrapper .form-wrapper input {
+	margin-bottom: 0;
+}
+.vertical-tabs-panes fieldset .form-item label, 
+.vertical-tabs-panes fieldset .exposed-filters .form-item label {
+    line-height: 20px;
+    margin: 10px 0;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-image .form-wrapper legend,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-file .form-wrapper legend,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-entityreference .form-wrapper legend {
+	background: none repeat scroll 0 0 transparent;
+    border-top: 1px solid #00B2EB;
+    margin: -1px 0 -30px;
+    padding: 10px 0 0;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-image .form-wrapper label,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-file .form-item label {
+	display: none;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-image .form-wrapper .image-widget {
+	margin-top: 40px;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-file .form-wrapper .file-widget,
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-entityreference .form-wrapper .fieldset-wrapper {
+	margin-top: 28px;
+	margin-bottom: 0;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-entityreference .form-wrapper {
+	margin-bottom: 0;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-addressfield {
+	background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-top: 1px solid #00B2EB;
+    box-shadow: 0 1px 5px #eee;
+    padding: 0 10px 10px;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-addressfield .form-wrapper legend {
+	background: none repeat scroll 0 0 transparent;
+    border-top: 1px solid #00B2EB;
+    display: block !important;
+    margin: -1px 0 0;
+    padding: 10px 0 0;
+}
+.vertical-tabs-panes fieldset .fieldset-wrapper .field-type-addressfield .form-wrapper .form-item {
+	border: none;
+	margin: 0;
+	padding: 0 10px 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+div.vertical-tabs .field-group-tab fieldset {
+    border: medium none;
+    margin: 0;
+    padding: 12px 0;
+}
+.vertical-tabs-pane .fieldset-wrapper > div:first-child {
+    padding-top: 0;
+}
+
+
+/*-- Project Specific --*/
+.view-display-id-page_1 .view-content {
+	margin: 0 20px 50px;
+}
+
+
+
