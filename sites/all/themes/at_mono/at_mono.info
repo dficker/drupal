@@ -8,7 +8,6 @@
   screenshot  = screenshot.png
 
 ;----------// Style-sheets
-  stylesheets[all][] = color/colors.css
   stylesheets[all][] = css/styles.base.css
   stylesheets[all][] = css/styles.settings.css
   stylesheets[all][] = css/styles.modules.css
