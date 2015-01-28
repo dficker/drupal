@@ -10,7 +10,7 @@ set :application, "rocori.k12.mn.us"
 # --------------------------------------------
 # Define required Gems/libraries
 # --------------------------------------------
-require 'ash/drupal'
+require 'ash/drupal_shared_hosting'
 
 # --------------------------------------------
 # Server Variables/Defaults
@@ -22,7 +22,7 @@ require 'ash/drupal'
 server "64.8.186.164", :web, :db
 
 set :user, "administrator"
-set(:deploy_to) { "/var/www/sites/#{application}/#{stage}" }
+set(:deploy_to) { "/var/www/env/#{application}/#{stage}" }
 
 # --------------------------------------------
 # Git/SVN Variables
