@@ -115,8 +115,8 @@ function at_mono_preprocess_html(&$vars) {
  * Adding markup to the main navigation
  */
 function at_mono_menu_tree__main_menu($vars) {
-  $html_before = '<div class="menu-wrap"><div class="full-width">';
-  $html_after = '</div></div>';
+  $html_before = '<div class="full-width">';
+  $html_after = '</div>';
     foreach (count_chars($vars['tree'], 1) as $i => $val) {
       return $html_before . '<ul class="menu clearfix">' . $vars['tree'] . '</ul>' . $html_after;
     }
