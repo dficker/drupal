@@ -914,6 +914,8 @@ a.active:focus {
 }
 #block-views-slideshow-block {
   margin: 0;
+}
+#block-views-slideshow-block .block-content {
   background: transparent;
   border: 0;
 }
