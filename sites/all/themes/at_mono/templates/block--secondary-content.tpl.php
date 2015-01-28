@@ -17,5 +17,4 @@
       </div>
     </div>
   </div>
-  <div class="shadow-l"><div class="shadow-r"></div></div>
 </<?php print $tag; ?>>

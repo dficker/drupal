@@ -1558,6 +1558,16 @@ i.footer-logo:before {
   float: right;
 }
 
+.front #tri-panel {
+  padding: 0;
+}
+.front #tri-panel .block-inner {
+  margin: 0;
+}
+.front #tri-panel .block {
+  margin: 0;
+}
+
 /* Search results */
 .search-results {
   margin: 0;
