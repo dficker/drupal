@@ -927,6 +927,9 @@ a.active:focus {
   min-width: 30px;
   text-align: center;
 }
+#menu-bar ul ul ul li {
+  margin: 2px 0;
+}
 
 /**
  * Hide additional menu levels for normal menu blocks - I can't think of a better
@@ -988,6 +991,7 @@ a.active:focus {
   background: url(images/tri-pat.gif);
 }
 #slideshow .bx-viewport {
+  height: 400px;
   max-height: 400px;
   overflow: hidden;
 }
