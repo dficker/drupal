@@ -849,6 +849,39 @@ a.active:focus {
   padding: 0;
   margin: 0;
 }
+
+/** Mega Menu Styles **/
+#menu-bar {
+  display: block;
+  position: relative;
+  float: none;
+}
+#menu-bar .contextual-links-wrapper {
+  display: none;
+}
+#menu-bar ul {
+  display: table;
+  position: relative;
+  width: 100%;
+  float: none;
+}
+#menu-bar ul li {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  float: none;
+}
+#menu-bar ul li a {
+  display: block;
+}
+#menu-bar ul ul {
+  display: none;
+  position: absolute;
+}
+#menu-bar li:hover ul {
+  display: block;
+}
+
 /**
  * Hide additional menu levels for normal menu blocks - I can't think of a better
  * way of handling these - you should really use http://drupal.org/project/menu_block 
