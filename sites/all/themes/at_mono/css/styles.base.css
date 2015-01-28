@@ -8,7 +8,7 @@ body {
   overflow: hidden;
 }
 #page-wrapper {
-  background: #fff;
+  background: #fafafa url(images/noise.png);
 }
 body,
 #branding,
@@ -1641,7 +1641,9 @@ i.footer-logo:before {
   line-height: 1.4;
   color: #454343;
 }
-
+body.bb-hs.front #secondary-content-wrapper .image-overlay {
+  background: transparent;
+}
 .front .region-content article {
   display: none;
 }
