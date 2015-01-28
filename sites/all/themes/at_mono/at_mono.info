@@ -22,9 +22,10 @@
   scripts[] = js/eq-gp.js
 
 ;----------// Regions
-  regions[menu_bar_top]      = Top Menu Bar
+  regions[top_menu]          = Top Menu
   regions[header]            = Header
   regions[menu_bar]          = Main Menu Bar
+  regions[slideshow]       = Slideshow
   regions[help]              = Help
   regions[secondary_content] = Featured panel
   regions[three_33_first]    = Sub feature panel (first)
@@ -45,10 +46,6 @@
   regions[four_2_third]      = Quad panel (third)
   regions[four_2_fourth]     = Quad panel (fourth)
   regions[tertiary_content]  = Tertiary panel
-  regions[four_first]        = Footer panel (first)
-  regions[four_second]       = Footer panel (second)
-  regions[four_third]        = Footer panel (third)
-  regions[four_fourth]       = Footer panel (fourth)
   regions[footer]            = Footer
   regions[page_top]          = Page top
   regions[page_bottom]       = Page bottom

@@ -254,3 +254,41 @@
 /* Standard layout */
 @media only screen and (min-width:1025px) {
 }
+
+
+
+
+/****************************************
+  new responsive styles - mobile first
+****************************************/
+
+/* medium up */
+@media only screen and (min-width:600px) {
+  .region-footer {
+    float: left;
+  }
+  .social,
+  .copyright {
+    float: right;
+  }
+  #block-block-5 {
+    margin-bottom: 0;
+  }
+  .copyright {
+    clear: right;
+  }
+  i.footer-logo {
+    left: 50%;
+    margin-left: -45px;
+    top: 50%;
+    margin-top: -38px;
+  }
+}
+
+/* large up */
+@media only screen and (min-width:1000px) {
+
+}
+
+
+

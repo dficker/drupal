@@ -168,12 +168,38 @@ function at_mono_preprocess_field(&$vars) {
 /**
  * Alter the search block form.
  */
+
+function at_mono_preprocess_search_block_form(&$vars) {
+  $vars['search_form'] = str_replace('type="text"', 'type="search"', $vars['search_form']);
+}
+
 function at_mono_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#title'] = t('Search');
     $form['search_block_form']['#title_display'] = 'invisible';
     $form['search_block_form']['#size'] = 25;
-    $form['actions']['submit']['#value'] = t('GO');
-    $form['search_block_form']['#attributes']['placeholder'] = t('enter search terms');
+    $form['actions']['submit'] = array(
+      '#value' => '<i class="fa fa-search"></i>',
+      '#type' => 'submit',
+      '#html' => TRUE,
+    );
+    $form['search_block_form']['#attributes']['placeholder'] = t('Search the site');
   }
+}
+
+function at_mono_button($variables) {
+  $element = $variables['element'];
+  $element['#attributes']['type'] = 'submit';
+  element_set_attributes($element, array('id', 'name', 'value'));
+
+  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
+
+  if(isset($element['#html'])){
+    return '<button class="search">'.$element['#value'].'</button>';
+  }
+
+  return '<input' . drupal_attributes($element['#attributes']) . ' />';
 }

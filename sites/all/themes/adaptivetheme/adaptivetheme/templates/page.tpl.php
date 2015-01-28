@@ -1,5 +1,4 @@
 <div id="page" class="container">
-
   <?php print render($page['leaderboard']); ?>
 
   <header class="clearfix" role="banner">

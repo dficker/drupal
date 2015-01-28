@@ -7,17 +7,10 @@
   float: left;
   margin: 0 10px; 
 }
-.hl-l .region-header {
-  float: right;
-  margin: 0 10px;
-}
 .hl-l .region-header .block {
   display: inline;
   clear: none;
   margin-bottom: 0;
-}
-.hl-l #logo {
-  padding: 25px 0 0 0;
 }
 /* HL - Right */
 .hl-r #branding {
@@ -207,7 +200,7 @@ body.bf-ssl,
 .btf-ssl .block-title {
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
-/* sans-serif arial/helvitica */
+/* sans-serif ubuntu/arial/helvitica */
 body.bf-a,
 .bf-a .form-text,
 .snf-a #site-name,
@@ -216,7 +209,7 @@ body.bf-a,
 .ntf-a .article-title,
 .ctf-a .comment-title,
 .btf-a .block-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 /* calibri and candara windows fonts */
 body.bf-cc,

@@ -3,41 +3,24 @@
 ?>
 <div id="page-wrapper"><div id="page">
 
-  <?php if($page['menu_bar_top']): ?>
-    <div id="menu-top-wrapper"><div class="container clearfix">
-      <?php print render($page['menu_bar_top']); ?>
-    </div></div>
-  <?php endif; ?>
-
-  <div id="header-wrapper"><div class="container clearfix">
-    <header class="clearfix">
-     <?php print render($page['header']); ?>
-      <div id="branding">
-        <?php if ($linked_site_logo): ?>
-          <div id="logo"><?php print $linked_site_logo; ?></div>
-        <?php endif; ?>
-
-        <?php if ($site_name || $site_slogan): ?>
-          <hgroup<?php if (!$site_slogan && $hide_site_name): ?> class="<?php print $visibility; ?>"<?php endif; ?>>
-            <?php if ($site_name): ?>
-              <h1 id="site-name"<?php if ($hide_site_name): ?> class="<?php print $visibility; ?>"<?php endif; ?>><?php print $site_name; ?></h1>
-            <?php endif; ?>
-            <?php if ($site_slogan): ?>
-              <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
-            <?php endif; ?>
-          </hgroup>
-        <?php endif; ?>
-      </div>
-
-     
-
-    </header>
-  </div></div>
+  <header id="header">
+    <div class="container group">
+      <?php print render($page['top_menu']); ?>
+      <div id="logo"><?php print $linked_site_logo; ?></div>
+      <?php print render($page['header']); ?>
+    </div>
+  </header>
 
   <?php if ($menubar = render($page['menu_bar'])): ?>
     <div id="nav-wrapper"><div class="container clearfix">
       <?php print $menubar; ?>
     </div></div>
+  <?php endif; ?>
+
+  <?php if ($page['slideshow']): ?>
+    <section id="slideshow">
+      <?php print render($page['slideshow']); ?>
+    </section>
   <?php endif; ?>
 
   <div id="secondary-content-wrapper">
@@ -93,29 +76,30 @@
 
         <?php $tag = $title ? 'section' : 'div'; ?>
         <<?php print $tag; ?> id="main-content">
+          <?php if (!$is_front): ?>
+            <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
+              <header class="main-content-header clearfix">
+                <?php print render($title_prefix); ?>
+                <?php if ($title): ?>
+                  <h1 id="page-title"><?php print $title; ?></h1>
+                <?php endif; ?>
+                <?php print render($title_suffix); ?>
 
-          <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
-            <header class="main-content-header clearfix">
-              <?php print render($title_prefix); ?>
-              <?php if ($title): ?>
-                <h1 id="page-title"><?php print $title; ?></h1>
-              <?php endif; ?>
-              <?php print render($title_suffix); ?>
-
-              <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
-                <div id="tasks" class="clearfix">
-                  <?php if ($primary_local_tasks): ?>
-                    <ul class="tabs primary clearfix"><?php print render($primary_local_tasks); ?></ul>
-                  <?php endif; ?>
-                  <?php if ($secondary_local_tasks): ?>
-                    <ul class="tabs secondary clearfix"><?php print render($secondary_local_tasks); ?></ul>
-                  <?php endif; ?>
-                  <?php if ($action_links = render($action_links)): ?>
-                    <ul class="action-links clearfix"><?php print $action_links; ?></ul>
-                  <?php endif; ?>
-                </div>
-              <?php endif; ?>
-            </header>
+                <?php if ($primary_local_tasks || $secondary_local_tasks || $action_links): ?>
+                  <div id="tasks" class="clearfix">
+                    <?php if ($primary_local_tasks): ?>
+                      <ul class="tabs primary clearfix"><?php print render($primary_local_tasks); ?></ul>
+                    <?php endif; ?>
+                    <?php if ($secondary_local_tasks): ?>
+                      <ul class="tabs secondary clearfix"><?php print render($secondary_local_tasks); ?></ul>
+                    <?php endif; ?>
+                    <?php if ($action_links = render($action_links)): ?>
+                      <ul class="action-links clearfix"><?php print $action_links; ?></ul>
+                    <?php endif; ?>
+                  </div>
+                <?php endif; ?>
+              </header>
+            <?php endif; ?>
           <?php endif; ?>
 
           <div id="content">
@@ -164,29 +148,21 @@
     </div>
   <?php endif; ?>
 
-  <?php if ($page['four_first'] || $page['four_second'] || $page['four_third'] || $page['four_fourth']): ?>
-    <div id="footer-wrapper">
-      <div class="container clearfix">
-        <footer class="clearfix">
-          <!-- Four column Gpanel (Quad) -->
-          <?php if ($page['four_first'] || $page['four_second'] || $page['four_third'] || $page['four_fourth']): ?>
-            <div id="footer-panel" class="four-4x25 gpanel clearfix">
-              <?php print render($page['four_first']); ?>
-              <?php print render($page['four_second']); ?>
-              <?php print render($page['four_third']); ?>
-              <?php print render($page['four_fourth']); ?>
-            </div>
-          <?php endif; ?>
-        </footer>
-      </div>
+  <footer id="footer">
+    <div class="container group">
+      <?php if ($page['footer']): ?>
+        <?php print render($page['footer']); ?>
+      <?php endif; ?>
+      <i class="footer-logo"></i>
+      <ul class="social">
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+      </ul>
+      <small class="copyright">
+        &copy; <?php print date('Y') . ' ' .t('Rocori School District') . '. ' . t('All rights reserved.'); ?>.
+      </small>
     </div>
-  <?php endif; ?>
-
-  <div id="colophone-wrapper">
-    <div class="container clearfix">
-      <?php print $feed_icons; ?>
-      <?php if ($page['footer']): print render($page['footer']); endif; ?>
-    </div>
-  </div>
+  </footer>
 
 </div></div>

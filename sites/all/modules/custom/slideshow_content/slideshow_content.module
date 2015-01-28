@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Slideshow Content feature.
+ */
+
+include_once 'slideshow_content.features.inc';
