@@ -5,6 +5,7 @@
 
 body {
   background: #000 url(images/stripe-pat.png);
+  overflow: hidden;
 }
 #page-wrapper {
   background: #fff;
@@ -1375,6 +1376,9 @@ a.active:focus {
 #block-block-5 .block-title-wrapper {
   margin: 0;
 }
+#block-block-5 .block-inner {
+  margin: 0;
+}
 #block-block-5 .block-title {
   padding: 0;
   font-size: 13px;
@@ -1550,20 +1554,23 @@ i.footer-logo:before {
   display: none;
 }
 .front #columns {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 .front #secondary-content-wrapper {
   box-shadow: 0 -10px 10px -10px rgba(0,0,0,.6);
   position: relative;
   z-index: 200;
-  padding-top: 40px;
+  padding-top: 60px;
+}
+.front #secondary-content-wrapper div.container {
+  padding: 0;
 }
 .front #tasks {
   float: right;
 }
-
 .front #tri-panel {
   padding: 0;
+  margin: 0 -4px;
 }
 .front #tri-panel .block-inner {
   margin: 0 4px;
