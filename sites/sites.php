@@ -40,4 +40,7 @@
  * signs to enable.
  */
 # $sites['devexample.com'] = 'example.com';
-# $sites['localhost.example'] = 'example.com';
+$sites['rocori.k12.mn.us'] = 'rocori.k12.mn.us';
+$sites['staging.rocori.k12.mn.us'] = 'rocori.k12.mn.us';
+$sites['rocori.dev'] = 'rocori.k12.mn.us';
+

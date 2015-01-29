@@ -22,7 +22,7 @@ require 'ash/drupal_shared_hosting'
 server "64.8.186.164", :web, :db
 
 set :user, "administrator"
-set(:deploy_to) { "/var/www/env/#{application}/#{stage}" }
+set(:deploy_to) { "/var/www/website/#{application}/#{stage}" }
 
 # --------------------------------------------
 # Git/SVN Variables
@@ -37,7 +37,7 @@ set(:deploy_to) { "/var/www/env/#{application}/#{stage}" }
 #      #set :branch, "master" # define which branch 
 #                             # should be used for deployments
 # --------------------------------------------
-set :repository, "git@github.com:rocori/drupal.git"
+set :repository, "https://github.com/rocori/drupal.git"
 set :scm, "git"
 # uncomment the line below if your project uses submodules (updates submodules)
 #set :git_enable_submodules, 1
