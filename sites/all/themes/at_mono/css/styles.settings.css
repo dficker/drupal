@@ -7,11 +7,6 @@
   float: left;
   margin: 0 10px; 
 }
-.hl-l .region-header .block {
-  display: inline;
-  clear: none;
-  margin-bottom: 0;
-}
 /* HL - Right */
 .hl-r #branding {
   float: right;
