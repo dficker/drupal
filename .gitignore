@@ -1,5 +1,7 @@
 # Ignore configuration files that may contain sensitive information.
 sites/default/settings.php
+sites/*/settings.*.php
+sites/*/settings.php
 sites/default/files
 
 # Ignore paths that contain generated content.
