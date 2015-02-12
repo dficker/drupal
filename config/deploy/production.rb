@@ -43,5 +43,5 @@ set :branch, "master"
 #      'bestappever.local' => 'www.bestappever.com'
 #    }
 set :multisites, {
-  'rocori.dev' => 'staging.rocori.k12.mn.us',
+  'rocori.k12.mn.us' => 'rocori.k12.mn.us',
 }
