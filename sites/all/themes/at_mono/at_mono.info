@@ -24,7 +24,7 @@
   regions[top_menu]          = Top Menu
   regions[header]            = Header
   regions[menu_bar]          = Main Menu Bar
-  regions[slideshow]       = Slideshow
+  regions[slideshow]         = Slideshow
   regions[help]              = Help
   regions[secondary_content] = Featured panel
   regions[three_33_first]    = Sub feature panel (first)
@@ -48,6 +48,7 @@
   regions[footer]            = Footer
   regions[page_top]          = Page top
   regions[page_bottom]       = Page bottom
+  regions[offcanvas]         = Off Canvas
 
 ;----------// Site Features
   features[] = logo

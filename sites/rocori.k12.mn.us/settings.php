@@ -222,9 +222,10 @@ $databases = array (
     'default' => 
     array (
       'database' => 'ric_dev_drupal',
-      'username' => 'root',
-      'password' => 'M5st1rd!',
-      'host' => '127.0.0.1',
+      'username' => 'developer',
+      'password' => 'Kv4AneXBEBxntx4L',
+      // 'host' => '127.0.0.1',
+      'host' => '192.168.16.24',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',

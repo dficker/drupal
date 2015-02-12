@@ -225,6 +225,15 @@
   }
 }
 
+@media only screen and (min-width:900px) {
+  #mobileTrigger {
+    display: none;
+  }
+  #menu-bar {
+    display: block;
+  }
+}
+
 /* large up */
 @media only screen and (min-width:1000px) {
   .bx-controls-direction {
