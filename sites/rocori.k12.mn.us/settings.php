@@ -201,9 +201,9 @@
  * @endcode
  */
 // $databases = array (
-//   'default' => 
+//   'default' =>
 //   array (
-//     'default' => 
+//     'default' =>
 //     array (
 //       'database' => 'drupaldb',
 //       'username' => 'drupaldb',
@@ -217,13 +217,13 @@
 // );
 
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
       'database' => 'ric_dev_drupal',
-      'username' => 'root',
-      'password' => 'M5st1rd!',
+      'username' => 'developer',
+      'password' => 'Kv4AneXBEBxntx4L',
       'host' => '127.0.0.1',
       'port' => '',
       'driver' => 'mysql',
