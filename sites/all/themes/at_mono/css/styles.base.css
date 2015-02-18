@@ -2279,11 +2279,11 @@ padding: 10px;
 
 /* In this section - interior sidebar menu */
 .region-sidebar-second .block-menu-block {
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   background-color: #f0f0f0;
-  border: 1px solid #aaa;
-  margin: 0 10px 20px;
+  border: 1px solid #68000e;
   border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 0 20px 20px;
   overflow: hidden;
 }
 .region-sidebar-second .block-menu-block .block-inner,
