@@ -1,0 +1,12 @@
+name = image styles
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = image_styles
+dependencies[] = image
+features[features_api][] = api:1
+features[image][] = profile
+features[image][] = quicklink
+features[image][] = slider
+features[image][] = slideshow
+features[image][] = slideshow_thumb

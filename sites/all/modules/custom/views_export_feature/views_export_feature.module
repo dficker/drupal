@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the views export feature feature.
+ */
+
+include_once 'views_export_feature.features.inc';

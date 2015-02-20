@@ -23,9 +23,9 @@ function slideshow_content_field_group_info() {
     'label' => 'Content',
     'weight' => '2',
     'children' => array(
-      0 => 'field_slide_text',
+      0 => 'field_enable_this_slide',
       1 => 'field_slide_link',
-      2 => 'field_enable_this_slide',
+      2 => 'field_slide_text',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
