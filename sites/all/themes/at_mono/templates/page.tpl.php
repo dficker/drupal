@@ -166,9 +166,9 @@
         <?php endif; ?>
         <i class="footer-logo"></i>
         <ul class="social">
-          <li><a href=""><i class="fa fa-facebook"></i></a></li>
-          <li><a href=""><i class="fa fa-twitter"></i></a></li>
-          <li><a href=""><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.facebook.com/pages/Rocori-School-District/513191082028222" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/rocoridistrict" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/user/ROCORIDistrict" target="_blank"><i class="fa fa-youtube"></i></a></li>
         </ul>
         <small class="copyright">
           &copy; <?php print date('Y') . ' ' .t('Rocori School District') . '. ' . t('All rights reserved.'); ?>.

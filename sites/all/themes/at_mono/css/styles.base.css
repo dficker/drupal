@@ -1308,6 +1308,7 @@ a.active:focus {
 .region-sidebar-second .menu.sf-menu li a {
   border: none;
   border-bottom: 1px solid #68000e;
+  color: #fff;
 }
 #tertiary-content-wrapper .block {
   padding-top: 15px;
