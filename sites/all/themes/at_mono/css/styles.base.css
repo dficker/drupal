@@ -7,6 +7,9 @@ body {
   background: #000 url(images/stripe-pat.png);
   overflow: hidden;
 }
+a {
+  color: #b81d00;
+}
 #page-wrapper {
   position: relative;
 }
@@ -697,22 +700,22 @@ a.active:focus {
   top: 0;
   right: 0;
 }
-#block-menu-block-1 {
+#block-menu-block-4 {
   margin: 0;
 }
-#block-menu-block-1 .block-inner {
+#block-menu-block-4 .block-inner {
   margin: 0;
 }
-#block-menu-block-1 .menu {
+#block-menu-block-4 .menu {
   padding: 0;
 }
-#block-menu-block-1 .menu li {
+#block-menu-block-4 .menu li {
   display: inline-block;
   margin-left: 8px;
   padding: 0;
   list-style: none;
 }
-#block-menu-block-1 .menu li a {
+#block-menu-block-4 .menu li a {
   color: #fff;
   padding: 5px 14px;
   display: block;
@@ -722,7 +725,7 @@ a.active:focus {
   transition: all .3s ease;
   font-weight: 500;
 }
-#block-menu-block-1 .menu li a:hover {
+#block-menu-block-4 .menu li a:hover {
   text-decoration: none;
   background: #B81D07;
 }
@@ -893,7 +896,8 @@ a.active:focus {
 
 /* Mega Menu Styles */
 #nav-wrapper .container,
-#block-menu-block-2 {
+#block-menu-block-2,
+#block-menu-block-1 {
   position: static;
 }
 #menu-bar {
